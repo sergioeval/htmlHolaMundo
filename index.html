@@ -2,13 +2,94 @@
 <html>
   <head>
     <title>My web</title>
+    <style media="screen">
+      table, th, td {
+        border:1px solid black;
+      }
+    </style>
   </head>
   <body>
+    <table style="width: 500px;">
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Precio</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Hola Beats</td>
+          <td>Gratis</td>
+        </tr>
+        <tr>
+          <td>Chancho</td>
+          <td>19.90</td>
+        </tr>
+        <tr>
+          <td>Chanchito feliz muy feliz</td>
+          <td>29</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <td></td>
+        <td>Total:49.8$</td>
+      </tfoot>
+    </table>
+    <!-- uñ es una lista no ordenada  -->
+    <ul>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+      <li>Elemento 4</li>
+    </ul>
+    <!-- ol es lista ordenada  -->
+    <ol>
+      <li value="50">Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+      <li>Elemento 4</li>
+      <li>
+        <ol>
+          <li style="list-style-type: lower-alpha;">Elemento anidado 1</li>
+          <li style="list-style-type: lower-alpha;">Elemento Anidado 2</li>
+        </ol>
+      </li>
+    </ol>
+
+
+
+    <form action="/formulario" method="POST">
+      <label for="nombre">Nombre</label>
+      <input value="chanchito" type="text" id="nombre" name="nombre" placeholder="Nombre">
+      <br>
+      <label for="apellido">Apellido</label>
+      <input value="estrada" type="text" id="apellido" name="apellido" placeholder="Chanchito Triste...">
+      <br>
+      <label for="comentario">Comentario</label>
+      <textarea rows="10" cols="50" id="comentario" placeholder="ingrese comentario" name="comentario">Valor por defecto</textarea>
+      <br>
+      <button type="button">Button</button>
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
     <h1>Mi primer heading</h1>
     <h2>Mi segundo heading</h2>
     <h3>Mi tercer heading heading</h3>
     <h4>Mi cuarto heading heading</h4>
     <h5>Mi quinto heading heading</h5>
     <h6>chanchito feliz</h6>
+    <p>Chanchito feliz esta muy feliz</p>
+    <p>Chanchito triste esta muy triste</p>
+    <hr>
+    <h2>Chanchito Felipe</h2>
+    <p>
+      Texto un poco mas aqui <span style="color:blue">hey mas texto</span>
+      tambien aqui hay mas texto <br>
+      para agregar mas cosas
+    </p>
+    <!-- comentario -->
+    <a target="_blank" href="https://www.google.com">Ir a Google</a>
+    <img src="img/Sergio.png" alt="" width="200">
+
   </body>
 </html>
